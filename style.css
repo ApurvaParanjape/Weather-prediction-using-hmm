@@ -1,0 +1,161 @@
+/* body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+#forecast-days {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.forecast-day {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  text-align: center;
+  width: 150px;
+} */
+
+/* General Styling */
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #007BFF; /* Blue background for the page */
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button Styling */
+#city {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+#getWeatherButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;  /* Keep blue background for button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#getWeatherButton:hover {
+  background-color: #0056b3; /* Darker blue when hovered */
+  transform: scale(1.1);
+}
+
+#getWeatherButton:active {
+  transform: scale(1);
+}
+
+/* Forecast Container Styling */
+#forecast {
+  text-align: center;
+}
+
+#forecast-days {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  overflow-x: auto; /* Allow horizontal scroll in case there are more predictions */
+}
+
+.forecast-day {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day img.weather-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.forecast-day h3 {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.forecast-day p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Current Weather Section */
+#current-weather {
+  margin-top: 20px;
+}
+
+#current-weather h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+#current-weather p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Ensure the icon is above the text */
+.forecast-day .icon-container {
+  font-size: 30px; /* Icon size */
+  text-align: center;
+  margin-bottom: 8px; /* Space between icon and text */
+}
+
+.forecast-day p {
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+
